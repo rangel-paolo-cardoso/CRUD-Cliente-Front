@@ -1,5 +1,6 @@
-# CRUD Cliente
+# CRUD Cliente Front-end
 
-### Um sistema que utiliza Angular v10.1.3 no Front-end e Java Spring no Back-end.
+### Esse repositório guarda o código fonte do Front-end que utiliza Angular v10.1.3.
 
-<p style="text-indent: 10px">O objetivo é aplicar os conhecimento de Angular e Java Spring Boot, construindo uma aplicação fazendo uso desse famoso framework e transações com o banco de dados MySQL.</p>
+<p style="text-indent: 10px">O objetivo é aplicar os conhecimentos de Angular, construir toda estrutura Client Side da aplicação utilizando o conceito de SPA (Single Page Application), para isso utilizando o módule de Router do Angular.</p>
+<p>Os estilos por questão de escolha estão em CSS Vanilla (CSS Puro), portanto a parte visual da aplicação está construída de forma manual.</p>
