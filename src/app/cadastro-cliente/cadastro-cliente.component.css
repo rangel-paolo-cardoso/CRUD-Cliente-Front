@@ -6,6 +6,44 @@
 }
 
 .customer-form {
+  background-color: rgb(211, 207, 207);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
+  padding: 25px;
+}
+
+.customer-label {
+  margin-top: 10px;
+}
+
+.customer-label input, .customer-label textarea {
+  border: none;
+  border-radius: 5px;
+  font-size: 12pt;
+  height: 25px;
+  margin-top: 5px;
+  text-indent: 10px;
+  width: 300px;
+}
+
+.customer-label textarea {
+  height: 90px;
+}
+
+.insert-btn {
+  background-color: lime;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 12pt;
+  height: 2em;
+  margin-top: 10px;
+}
+
+.insert-btn:hover {
+  background-color: green;
+  color: white;
 }
