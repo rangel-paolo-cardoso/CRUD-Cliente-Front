@@ -1,0 +1,11 @@
+.customer-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+.customer-form {
+  display: flex;
+  flex-direction: column;
+}
