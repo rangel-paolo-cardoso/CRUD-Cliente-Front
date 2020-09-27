@@ -1,0 +1,29 @@
+.header-content {
+  background-color: blue;
+  height: 60px;
+  padding-left: 30px;
+}
+
+.manu-list li {
+  color: white;
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 5px 7px 0;
+  padding: 15px 15px;
+}
+
+.manu-list li:hover {
+  background: linear-gradient(90deg, #999, #eee, #999);
+}
+
+.manu-list li a {
+  color: black;
+  text-decoration: none;
+}
+
+.manu-list li a:hover {
+  color: navy;
+  font-weight: 500;
+  text-decoration: underline;
+}
