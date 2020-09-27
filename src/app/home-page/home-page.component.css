@@ -1,0 +1,14 @@
+.home-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+}
+
+.welcome-container h1 {
+  font-size: 25pt;
+}
+
+.welcome-container p {
+  margin-top: 50px;
+}
