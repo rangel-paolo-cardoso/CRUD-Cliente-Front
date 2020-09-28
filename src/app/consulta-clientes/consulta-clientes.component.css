@@ -1,0 +1,134 @@
+.query-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+}
+
+.controls-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.controls-container input {
+  border-bottom: 2px solid gray;
+  border-left: 2px solid gray;
+  border-radius: 5px 0;
+  border-right: 0;
+  border-top: 0;
+  font-size: 12pt;
+  height: 25px;
+  margin-bottom: 7px;
+  text-indent: 10px;
+  width: 300px;
+}
+
+.controls-container input:focus {
+  outline: none;
+  box-shadow: 0 0 7px 1px blue;
+}
+
+.controls-container button {
+  background-color: lime;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  font-size: 12pt;
+  height: 2em;
+  margin-top: 10px;
+}
+.controls-container button:hover {
+  background-color: green;
+  box-shadow: none;
+  color: white;
+}
+
+.controls-container button:focus {
+  outline: none;
+}
+
+.dataset-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 35px;
+  width: 100%;
+}
+
+.data-table {
+  width: 90%;
+}
+
+.data-table th {
+  background-color: darkblue;
+  color: white;
+}
+
+.data-table td {
+  height: 85px;
+}
+
+.data-table,
+.data-table th,
+.data-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+.data-table td input,
+.data-table td textarea,
+.data-table td button {
+  font-size: 12pt;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  width: 98%;
+}
+
+.data-table td textarea {
+  resize: none;
+  width: 260px;
+}
+
+.data-table td button {
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 56px;
+}
+
+.data-table td button:active {
+  box-shadow: 0 0 5px 2px gray;
+}
+
+.data-table td button:focus {
+  outline: none;
+}
+
+.edit-btn, .delete-btn {
+  color: white;
+}
+
+.edit-btn {
+  background-color: rgb(0, 81, 156);
+}
+
+.edit-btn:hover {
+  color: black;
+  background-color: rgb(44, 147, 243);
+}
+
+.delete-btn {
+  background-color: rgb(117, 26, 10);
+}
+
+.delete-btn:hover {
+  color: black;
+  background-color: rgb(255, 38, 0);
+}

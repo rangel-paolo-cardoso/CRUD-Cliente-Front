@@ -14,7 +14,7 @@
 }
 
 .manu-list li:hover {
-  background: radial-gradient(#eee 75%, #999);
+  background: radial-gradient(white 75%, #999);
 }
 
 .manu-list li a {

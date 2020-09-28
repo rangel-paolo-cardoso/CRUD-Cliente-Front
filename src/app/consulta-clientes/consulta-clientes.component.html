@@ -1,1 +1,49 @@
-<p>consulta-clientes works!</p>
+<div class="query-container">
+  <h1>Consulta de Clientes</h1>
+  <div class="controls-container">
+    <input type="text" placeholder="Digite o nome do cliente">
+    <input type="text" placeholder="Digite o telefone do cliente">
+    <button>Buscar</button>
+  </div>
+  <div class="dataset-container">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>Observação</th>
+          <th>Endereço</th>
+          <th colspan="2">Opções</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" value="Rangel">
+          </td>
+          <td>
+            <input type="text" value="000.000.000-00">
+          </td>
+          <td>
+            <input type="text" value="957077511">
+          </td>
+          <td>
+            <textarea name="" id="" >Eu quero milkshake de morango</textarea>
+          </td>
+          <td>
+            <input type="text" value="R. Praia das Torres, 207, São Paulo">
+          </td>
+          <td>
+            <button class="edit-btn">Editar</button>
+          </td>
+          <td>
+            <button class="delete-btn">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Nome, cpf, telefone, observação, endereço -->

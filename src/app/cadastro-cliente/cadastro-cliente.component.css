@@ -8,6 +8,7 @@
 .customer-form {
   background-color: rgb(211, 207, 207);
   border-radius: 10px;
+  box-shadow: 0 0 15px 5px gray;
   display: flex;
   flex-direction: column;
   margin-top: 25px;
@@ -19,8 +20,11 @@
 }
 
 .customer-label input, .customer-label textarea {
-  border: none;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
   border-radius: 5px;
+  border-right: 0;
+  border-top: 0;
   font-size: 12pt;
   height: 25px;
   margin-top: 5px;
@@ -29,7 +33,14 @@
 }
 
 .customer-label textarea {
-  height: 90px;
+  height: 120px;
+  resize: none;
+}
+
+.customer-label input:focus, .customer-label textarea:focus {
+  border-bottom: 2px solid gray;
+  box-shadow: 0 0 7px 1px blue;
+  outline: none;
 }
 
 .insert-btn {
@@ -45,5 +56,10 @@
 
 .insert-btn:hover {
   background-color: green;
+  box-shadow: none;
   color: white;
+}
+
+.insert-btn:focus {
+  outline: none;
 }
