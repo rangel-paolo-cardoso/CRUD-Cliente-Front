@@ -9,6 +9,7 @@ import { ConsultaClientesComponent } from './consulta-clientes/consulta-clientes
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 import { AppRoutingModule } from './app-routing-module';
 import { HeaderComponent } from './header/header.component';
+import { UserListComponent } from './models/user-list/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './header/header.component';
     HomePageComponent,
     ConsultaClientesComponent,
     CadastroClienteComponent,
-    HeaderComponent
+    HeaderComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,

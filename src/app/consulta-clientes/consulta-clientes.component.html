@@ -23,21 +23,21 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr *ngFor="let cliente of clientes">
           <td>
-            <input type="text" value="Rangel">
+            <input type="text" value={{cliente.nome}}>
           </td>
           <td>
-            <input type="text" value="000.000.000-00">
+            <input type="text" value={{cliente.cpf}}>
           </td>
           <td>
-            <input type="text" value="957077511">
+            <input type="text" value={{cliente.telefone}}>
           </td>
           <td>
-            <textarea name="" id="" >Eu quero milkshake de morango</textarea>
+            <textarea name="" id="" >{{cliente.observacao}}</textarea>
           </td>
           <td>
-            <input type="text" value="R. Praia das Torres, 207, São Paulo">
+            <input type="text" value={{cliente.endereco}}>
           </td>
           <td>
             <button class="edit-btn">Editar</button>
