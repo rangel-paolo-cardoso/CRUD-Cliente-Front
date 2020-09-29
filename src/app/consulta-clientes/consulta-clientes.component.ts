@@ -1,15 +1,31 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+// import { Router } from '@angular/router';
+// import { Cliente } from '../models/cliente/cliente';
+// import { UserServiceService } from '../Services/user-service.service';
 
 @Component({
   selector: 'app-consulta-clientes',
   templateUrl: './consulta-clientes.component.html',
-  styleUrls: ['./consulta-clientes.component.css']
+  styleUrls: ['./consulta-clientes.component.css'],
 })
-export class ConsultaClientesComponent implements OnInit {
+export class ConsultaClientesComponent {
 
-  constructor() { }
+  // cliente: Cliente;
 
-  ngOnInit(): void {
+  constructor(
+    // private router: Router,
+    // private clienteService: UserServiceService
+  ) {
+    // this.cliente = new Cliente();
   }
 
+  // onSubmit() {
+  //   this.clienteService
+  //     .save(this.cliente)
+  //     .subscribe((result) => this.gotoClienteList());
+  // }
+
+  // gotoClienteList() {
+  //   this.router.navigate(["/ConsultaCliente"]);
+  // }
 }

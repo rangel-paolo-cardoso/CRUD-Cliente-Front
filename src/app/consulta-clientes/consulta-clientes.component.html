@@ -1,9 +1,14 @@
 <div class="query-container">
   <h1>Consulta de Clientes</h1>
-  <div class="controls-container">
-    <input type="text" placeholder="Digite o nome do cliente">
-    <input type="text" placeholder="Digite o telefone do cliente">
-    <button>Buscar</button>
+  <div class="option-container">
+    <div class="controls-container">
+      <input type="text" placeholder="Digite o nome do cliente">
+      <input type="text" placeholder="Digite o telefone do cliente">
+      <button>Buscar</button>
+    </div>
+    <div class="create-customer-container">
+      <a class="create-btn-link" routerLink="/CadastroCliente">Cadastre um novo Cliente</a>
+    </div>
   </div>
   <div class="dataset-container">
     <table class="data-table">
@@ -18,21 +23,21 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr *ngFor="let cliente of clientes">
           <td>
-            <input type="text" value="Rangel">
+            <input type="text" value={{cliente.nome}}>
           </td>
           <td>
-            <input type="text" value="000.000.000-00">
+            <input type="text" value={{cliente.cpf}}>
           </td>
           <td>
-            <input type="text" value="957077511">
+            <input type="text" value={{cliente.telefone}}>
           </td>
           <td>
-            <textarea name="" id="" >Eu quero milkshake de morango</textarea>
+            <textarea name="" id="" >{{cliente.observacao}}</textarea>
           </td>
           <td>
-            <input type="text" value="R. Praia das Torres, 207, São Paulo">
+            <input type="text" value={{cliente.endereco}}>
           </td>
           <td>
             <button class="edit-btn">Editar</button>
