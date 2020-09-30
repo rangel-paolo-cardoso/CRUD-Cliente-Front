@@ -1,13 +1,13 @@
 <section class="customer-container">
   <div class="customer-form-container">
     <h1>Insira os dados do cliente</h1>
-    <form class="customer-form" action="#">
+    <form class="customer-form" (ngSubmit)="saveCliente()">
       <label for="nome" class="customer-label">
         <p>Nome</p>
         <input
           type="text"
-          id="nome"
           name="nomeCliente"
+          [(ngModel)]="cliente.nome"
           placeholder="Nome Completo"
         />
       </label>
@@ -15,8 +15,8 @@
         <p>CPF</p>
         <input
           type="text"
-          id="cpf"
           name="cfpCliente"
+          [(ngModel)]="cliente.cpf"
           placeholder="CPF"
         />
       </label>
@@ -24,8 +24,8 @@
         <p>Telefone</p>
         <input
           type="text"
-          id="tel"
           name="telefone"
+          [(ngModel)]="cliente.telefone"
           placeholder="Número de telefone ou celular"
         />
       </label>
@@ -33,7 +33,7 @@
         <p>Observação</p>
         <textarea
           name="observacao"
-          id="obs"
+          [(ngModel)]="cliente.observacao"
           placeholder="Digite informações adicionais"
         ></textarea>
       </label>
@@ -41,12 +41,12 @@
         <p>Endereço</p>
         <input
           type="text"
-          id="end"
           name="endereco"
+          [(ngModel)]="cliente.endereco"
           placeholder="Ex: Av. Paulista, 208, São Paulo"
         />
       </label>
-      <button class="insert-btn">Cadastrar</button>
+      <button type="submit" class="insert-btn">Cadastrar</button>
     </form>
   </div>
 </section>

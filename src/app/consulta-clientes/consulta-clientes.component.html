@@ -23,21 +23,21 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr *ngFor="let cliente of clientes">
           <td>
-            <input type="text" value="José">
+            <input type="text" [(ngModel)]="cliente.nome">
           </td>
           <td>
-            <input type="text" value="000.000.000-00">
+            <input type="text" [(ngModel)]="cliente.cpf">
           </td>
           <td>
-            <input type="text" value="55553333">
+            <input type="text" [(ngModel)]="cliente.telefone">
           </td>
           <td>
-            <textarea name="" id="" >Preciso de um site para moda</textarea>
+            <textarea name="" id="" >{{cliente.observacao}}</textarea>
           </td>
           <td>
-            <input type="text" value="R. XYZ, 201, São Paulo">
+            <input type="text" [(ngModel)]="cliente.endereco">
           </td>
           <td>
             <button class="edit-btn">Editar</button>
