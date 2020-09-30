@@ -18,4 +18,8 @@ export class ClienteService {
       map((response) => response)
     );
   }
+
+  saveCliente(cliente: Cliente): Observable<Cliente> {
+    return this.httpClient.post<Cliente>(this.getUrl, cliente);
+  }
 }

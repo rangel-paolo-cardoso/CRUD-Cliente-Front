@@ -16,7 +16,6 @@ export class AppComponent {
         if (event['url'] == '/') {
           this.showMainPage = false;
         } else {
-          console.log("NU")
           this.showMainPage = true;
         }
       }
